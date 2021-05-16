@@ -1,0 +1,20 @@
+.hamburger-menu {
+    padding: 20px 20px;
+    box-sizing: border-box;
+    .icon {
+        @include hamburgerDashes();
+        position: relative;
+        &::before {
+            content: "";
+            position: absolute;
+            top: -5px;
+            @include hamburgerDashes();
+        }
+        &::after {
+            content: "";
+            position: absolute;
+            bottom: -5px;
+            @include hamburgerDashes();
+        }
+    }
+}

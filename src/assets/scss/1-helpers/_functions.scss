@@ -1,0 +1,11 @@
+@mixin flexItem($horizontal, $vertical) {
+    display: flex;
+    justify-content: $horizontal;
+    align-items: $vertical;
+}
+
+@mixin hamburgerDashes() {
+    width: 15px;
+    height: 2.5px;
+    background-color: white;
+}

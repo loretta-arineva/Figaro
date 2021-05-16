@@ -3,7 +3,7 @@ import logo from '../../../../assets/images/figaro-logo.svg';
 
 const Logo = () => {
     return (
-        <div>
+        <div className="site-logo">
             <img src={logo} alt="The figaro logo. Scissors in a sqare, left of the word Figaro."/>
         </div>
     )

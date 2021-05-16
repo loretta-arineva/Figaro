@@ -1,0 +1,19 @@
+header {
+    height: 64px;
+    @include flexItem(space-between, center);
+    background-color: $transparent;
+    background-color: black;
+    padding-left: 20px;
+    padding-right: 10px;
+}
+
+@media screen and (max-width: 990px) {
+    header {
+        .hamburger-button {
+            display: block;
+        }
+        .main-navigation {
+            display: none;
+        }
+    }
+}

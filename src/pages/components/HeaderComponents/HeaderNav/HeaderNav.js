@@ -4,8 +4,8 @@ import ListItem from '../../multifunctional/Navigation/NavListItem';
 
 const HeaderNav = () => {
     return (
-        <Navigation>
-            <ListItem linkUrl="#page-top">Home</ListItem>
+        <Navigation classList="main-navigation">
+            <ListItem linkUrl="#hero">Home</ListItem>
             <ListItem linkUrl="#page-top">Home</ListItem>
             <ListItem linkUrl="#page-top">Home</ListItem>
             <ListItem linkUrl="#page-top">Home</ListItem>

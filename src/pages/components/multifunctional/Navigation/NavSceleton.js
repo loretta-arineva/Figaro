@@ -2,7 +2,7 @@ import React from 'react';
 
 const NavSceleton = ({children, classList}) => {
     return (
-        <nav className={classList ? classList.join(" ") : "" }>
+        <nav className={classList}>
             <ul>
                 {children}
             </ul>
