@@ -2,7 +2,7 @@ import React from 'react';
 
 const ArrowButton = ({ children }) => {
     return (
-        <a href="">{children}</a>
+        <a className="arrow-button" href="">{children}</a>
     )
 }
 

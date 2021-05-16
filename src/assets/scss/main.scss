@@ -6,15 +6,20 @@
 @import '1-helpers/_mixins';
 
 // 2 - TOOLS
+@import '2-tools/_reset';
 
 // 3 - BASICS
 @import '3-basics/_links';
+@import '3-basics/_typography';
 
 // 4 - LAYOUT
 
 // 5 - MODULES
 @import '5-modules/_hamburger';
 @import '5-modules/_logo';
+@import '5-modules/_buttons';
 
 //  6 - PAGES
 @import '6-pages/_header';
+@import '6-pages/_hero';
+@import '6-pages/_products';

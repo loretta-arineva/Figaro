@@ -1,0 +1,18 @@
+#products {
+    background-color: $productsBgPrimary;
+    .product-container {
+        @include flexItem(center, center);
+        flex-direction: column;
+        height: 100vh;
+        background-color: white;
+
+        img {
+            width: 100%;
+        }
+    }
+    
+    .product-container:nth-of-type(2n) {
+        background-color: $productGrey;
+        margin-top: 15px;
+    }
+}

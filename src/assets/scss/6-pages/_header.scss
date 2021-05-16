@@ -1,8 +1,11 @@
 header {
     height: 64px;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    box-sizing: border-box;
     @include flexItem(space-between, center);
     background-color: $transparent;
-    background-color: black;
     padding-left: 20px;
     padding-right: 10px;
 }

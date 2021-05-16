@@ -1,0 +1,15 @@
+.arrow-button {
+    text-align: center;
+    font-size : 22px;
+    color     : $redButton;
+
+    &::after {
+        content: "\2192";
+        font-family: Arial, Helvetica, sans-serif;
+        margin-left: 7px;
+    }
+
+    &:hover {
+        color: $hoverArrowBtn;
+    }
+}

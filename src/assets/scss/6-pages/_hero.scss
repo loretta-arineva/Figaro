@@ -1,0 +1,20 @@
+#hero {
+    height             : 100vh;
+    background-image   : url("../../images//hero-image.jpg");
+    background-position: 50% 50%;
+    background-size    : cover;
+    @include flexItem(center, center);
+    flex-direction: column;
+
+    .hero-content-wrapper {
+        padding: 30px;
+    }
+
+    .hero-description {
+        font-size  : 16px;
+        line-height: 25px;
+        max-width  : 1200px;
+        color      : $primaryColor;
+        padding: 15px 0;
+    }
+}

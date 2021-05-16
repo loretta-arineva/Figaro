@@ -6,9 +6,11 @@ import Button from '../components/multifunctional/ArrowButton';
 const Hero = () => {
     return (
         <section id="hero">
-            <Title></Title>
-            <Description></Description>
-            <Button>Discover</Button>
+            <div className="hero-content-wrapper">
+                <Title></Title>
+                <Description></Description>
+                <Button>Discover</Button>
+            </div>
         </section>
     )
 }
