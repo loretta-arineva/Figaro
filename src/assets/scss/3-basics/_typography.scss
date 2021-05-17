@@ -1,8 +1,31 @@
 h1 {
-    font-size: 35px;
+    font-size  : 35px;
     line-height: 45px;
     font-family: 'Playfair Display', sans-serif;
-    color: $primaryColor;
+    color      : $primaryColor;
+}
+
+em {
+    font-size : 22px;
+    font-style: italic;
+}
+
+h2, h3 {
+    color: $textPrimaryColor;
+}
+
+h2 {
+    font-size: 25px;
+    line-height: 55px;
+}
+
+h3 {
+    font-family: Lato, sans-serif;
+    font-weight: 400;
+    text-transform: uppercase;
+    font-size: 14px;
+    letter-spacing: 5px;
+    line-height: 20px;
 }
 
 // PRODUCTS
