@@ -5,6 +5,7 @@
 @import '1-helpers/_functions';
 @import '1-helpers/_mixins';
 
+
 // 2 - TOOLS
 @import '2-tools/_reset';
 
@@ -33,3 +34,7 @@
 @import '6-pages/_gallery';
 @import '6-pages/_services';
 @import '6-pages/_footer';
+
+
+//  7 - QUERIES 
+@import '7-queries/_mediaQueries';

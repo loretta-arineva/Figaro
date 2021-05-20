@@ -1,3 +1,20 @@
 .gallery-card {
     background-color: $cardBg;
+    padding: 40px;
+    @include flexItem(center, center) ;
+    flex-direction: column;
+    height: 420px;
+
+    img {
+        width              : 148px;
+        height             : 148px;
+    }
+
+    .product-title {
+        margin: 25px 0;
+        font-size: 22px;
+        font-weight: 300;
+        letter-spacing: 5px;
+        color    : $galleryTitle;
+    }
 }

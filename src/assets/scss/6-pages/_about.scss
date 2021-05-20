@@ -6,5 +6,22 @@
             line-height: 38px;
             color: $textPrimaryColor;
         }
+
+        .about-paragraph-1 {
+            margin-bottom: 50px;
+        }
+
+        .text-underline {
+            text-decoration: underline;
+        }
+
+    }
+    
+    .signature-wrapper {
+        margin: 50px 0 0;
+        font-size: 40px;
+        line-height: 40px;
+        letter-spacing: 2px;
+        text-align: right;
     }
 }
