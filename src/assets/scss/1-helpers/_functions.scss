@@ -1,11 +1,23 @@
+// Flex item mixin
 @mixin flexItem($horizontal, $vertical) {
-    display: flex;
-    justify-content: $horizontal;
-    align-items: $vertical;
+    display                : flex;
+    justify-content        : $horizontal;
+    -webkit-justify-content: $horizontal;
+    align-items            : $vertical;
+    -webkit-align-items    : $vertical;
 }
 
+// Hamburger icon
 @mixin hamburgerDashes() {
-    width: 15px;
-    height: 2.5px;
+    width           : 15px;
+    height          : 2.5px;
     background-color: white;
+}
+
+// Custom border mixin with box shadow
+@mixin itemBorder($borderColor, $borderRadius, $backgroundColor) {
+    border          : 0px solid $borderColor;
+    border-radius   : $borderRadius;
+    background-color: $backgroundColor;
+    box-shadow      : 1px 1px 12px 1px rgba(56, 56, 56, 0.08);
 }

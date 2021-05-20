@@ -1,0 +1,26 @@
+#services {
+    padding: 60px 10px;
+
+    h2 {
+        text-align: center;
+    }
+
+    .services-grid {
+        width                 : 100%;
+        display               : grid;
+        -webkit-box-orient    : vertical;
+        -webkit-box-direction : normal;
+        -webkit-flex-direction: column;
+        -ms-flex-direction    : column;
+        flex-direction        : column;
+        grid-column-gap       : 16px;
+        grid-row-gap          : 16px;
+        -ms-grid-columns      : 1fr;
+        grid-template-columns : 1fr;
+        -ms-grid-rows         : auto auto auto auto auto auto;
+        grid-template-rows    : auto auto auto auto auto auto;
+        max-width             : 1400px;
+
+        
+    }
+}

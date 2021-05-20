@@ -1,5 +1,6 @@
 import React from 'react';
 import ServiceComponent from '../components/ServicesComponents/Service';
+import Prices from './Prices';
 import image1 from '../../assets/images/Services/hair-shape.svg';
 import image2 from '../../assets/images/Services/hairdryer-silhouette-side-view.svg';
 import image3 from '../../assets/images/Services/chair-side-view-silhouette.svg';
@@ -19,6 +20,7 @@ const Services = () => {
                 <ServiceComponent imgUrl={image5} imgAlt="Icon of a salon spray bottle">Coloring</ServiceComponent>
                 <ServiceComponent imgUrl={image6} imgAlt="Icon of a hand">Scalp Massage</ServiceComponent>
             </div>
+            <Prices />
         </section>
     )
 }
