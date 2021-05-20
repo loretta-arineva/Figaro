@@ -5,6 +5,7 @@ import ListItem from '../components/multifunctional/Navigation/NavListItem';
 const Footer = () => {
     return (
         <footer>
+            <Logo/>
             <h3>Information</h3>
             <Navigation>
                 <ListItem>About us</ListItem>
@@ -35,7 +36,8 @@ const Footer = () => {
                 <ListItem></ListItem>
             </Navigation>
 
-            <div className="copyright">Created by <a>Loreta Krasteva</a></div>
+            <div className="copyright">Created by <a href="https://loretta-arineva.dev/" target="_blank"><span>Loreta Krasteva</span></a></div>
+            
         </footer>
     )
 }
