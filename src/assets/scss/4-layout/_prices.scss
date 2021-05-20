@@ -1,0 +1,55 @@
+#prices {
+    margin-top: 20px;
+    @include flexItem(center, center);
+    flex-direction: column;
+
+    .price-paragraph-wrapper {
+        max-width    : 1400px;
+        margin-bottom: 0px;
+        font-family  : 'Playfair Display', sans-serif;
+        color        : #333;
+        font-size    : 22px;
+        line-height  : 38px;
+        padding      : 50px;
+    }
+
+    .price-list-wrapper {
+        width     : 100%;
+        padding   : 15px;
+        box-sizing: border-box;
+
+        .price-card {
+            padding: 30px;
+            @include itemBorder(#000, 5px, rgba(250, 250, 248, 0.62), rgba(56, 56, 56, 0.08));
+            
+            h3 {
+                font-size     : 35px;
+                font-family   : 'Playfair Display', sans-serif;
+                line-height   : 50px;
+                font-weight   : 400;
+                text-transform: unset;
+                text-align    : left;
+            }
+
+            .week-days {
+                text-transform: uppercase;
+                font-size: 14px;
+                margin: 10px 0;
+
+                span {
+                    margin: 0 5px;
+                }
+            }
+        }
+
+        .price-card:nth-of-type(2n - 1) {
+            background-color: black;
+            color           : $priceCardGrey;
+
+            h3 {
+                color: $priceCardGrey;
+
+            }
+        }
+    }
+}

@@ -15,9 +15,9 @@
 }
 
 // Custom border mixin with box shadow
-@mixin itemBorder($borderColor, $borderRadius, $backgroundColor) {
+@mixin itemBorder($borderColor, $borderRadius, $backgroundColor, $boxShadow) {
     border          : 0px solid $borderColor;
     border-radius   : $borderRadius;
     background-color: $backgroundColor;
-    box-shadow      : 1px 1px 12px 1px rgba(56, 56, 56, 0.08);
+    box-shadow      : 1px 1px 12px 1px $boxShadow;
 }

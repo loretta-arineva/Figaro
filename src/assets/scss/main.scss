@@ -13,6 +13,7 @@
 @import '3-basics/_typography';
 
 // 4 - LAYOUT
+@import '4-layout/_prices';
 
 // 5 - MODULES
 @import '5-modules/_hamburger';
@@ -21,6 +22,8 @@
 @import '5-modules/_plainGalleryCard';
 @import '5-modules/_imageGalleryCard';
 @import '5-modules/_serviceWrapper';
+@import '5-modules/_separator';
+@import '5-modules/_serviceList';
 
 //  6 - PAGES
 @import '6-pages/_header';
@@ -29,3 +32,4 @@
 @import '6-pages/_about';
 @import '6-pages/_gallery';
 @import '6-pages/_services';
+@import '6-pages/_footer';

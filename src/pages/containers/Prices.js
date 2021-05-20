@@ -1,5 +1,8 @@
 import React from 'react';
 import PriceCard from '../components/ServicesComponents/PriceCard';
+import Navigation from '../components/multifunctional/Navigation/NavSceleton';
+import NaninduPriceList from '../components/ServicesComponents/PriceLists/NaninduPriceList';
+import TakiataPriceList from '../components/ServicesComponents/PriceLists/TakiataPriceList';
 
 const Prices = () => {
     return (
@@ -8,8 +11,13 @@ const Prices = () => {
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
             </div>
             <div className="price-list-wrapper">
-                <PriceCard cardTitle="Charataki Offer" dayFrom="Thu" dayTo="Sat">Mew</PriceCard>
-                <PriceCard cardTitle="Terataki Offer" dayFrom="Mon" dayTo="Wed">Mew</PriceCard>
+                <PriceCard cardTitle="Takiata Offer" dayFrom="Thu" dayTo="Sat">
+                    <NaninduPriceList />
+                </PriceCard>
+                
+                <PriceCard cardTitle="Nanindu Offer" dayFrom="Mon" dayTo="Wed">
+                    <TakiataPriceList />
+                </PriceCard>
             </div>
         </div>
     )
