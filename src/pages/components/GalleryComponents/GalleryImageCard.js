@@ -1,8 +1,10 @@
 import React from 'react';
 
-const GalleryImageCard = ({imgUrl, imgAlt}) => {
+const GalleryImageCard = ({imgUrl, imgAlt, className}) => {
+    const classList = ["image-card", className].join(" ");
+    
     return (
-        <div className="image-card">
+        <div className={classList}>
             <img src={imgUrl} alt={imgAlt} />
         </div>
     )

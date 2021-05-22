@@ -13,15 +13,15 @@ const Gallery = () => {
     return (
         <section id="gallery">
             <div className="gallery-grid">
-            <ImageCard imgUrl={image4} imgAlt="A photo of a person getting a haircut."></ImageCard>
-            <Card>
+            <ImageCard imgUrl={image4} imgAlt="A photo of a person getting a haircut." className="pic-1"></ImageCard>
+            <Card className="pic-2">
                 <img src={image6} alt="Scissors icon" />
                 <div className="product-title lato-title">Products</div>
             </Card>
-            <ImageCard imgUrl={image5} imgAlt="A photo of a person getting a haircut."></ImageCard>
-            <ImageCard imgUrl={image1} imgAlt="A photo of a person getting a haircut."></ImageCard>
-            <ImageCard imgUrl={image2} imgAlt="A photo of a person getting a haircut."></ImageCard>
-            <ImageCard imgUrl={image3} imgAlt="A photo of a person getting a haircut."></ImageCard>
+            <ImageCard imgUrl={image1} imgAlt="A photo of a person getting a haircut." className="pic-3"></ImageCard>
+            <ImageCard imgUrl={image2} imgAlt="A photo of a person getting a haircut." className="pic-4"></ImageCard>
+            <ImageCard imgUrl={image3} imgAlt="A photo of a person getting a haircut." className="pic-5"></ImageCard>
+            <ImageCard imgUrl={image5} imgAlt="A photo of a person getting a haircut." className="pic-6"></ImageCard>
             </div>
         </section>
     )

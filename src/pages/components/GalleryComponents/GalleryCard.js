@@ -1,9 +1,11 @@
 import React from 'react';
 import ArrowButton from '../multifunctional/ArrowButton';
 
-const GalleryCard = ({children}) => {
+const GalleryCard = ({children, className}) => {
+    const classList = ["gallery-card", className].join(" ");
+
     return (
-        <div className="gallery-card">
+        <div className={classList}>
             {children}
             <ArrowButton>Discover</ArrowButton>
         </div>

@@ -1,5 +1,5 @@
 #gallery {
-    padding         : 13px;
+    padding         : 20px;
     background-color: $galleryBg;
 
 
@@ -11,14 +11,8 @@
         -webkit-flex-direction: column;
         -ms-flex-direction    : column;
         flex-direction        : column;
-        grid-column-gap       : 16px;
-        grid-row-gap          : 16px;
-        -ms-grid-columns      : 1fr;
-        grid-template-columns : 1fr;
-        -ms-grid-rows         : auto auto auto auto auto auto auto auto;
-        grid-template-rows    : auto auto auto auto auto auto auto auto;
         max-width             : 1400px;
-        grid-gap              : 25px
+        grid-gap              : 16px;
     }
 
 }
