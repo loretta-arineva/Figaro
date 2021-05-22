@@ -1,5 +1,9 @@
 # Figaro
 
+#### Note:
+
+This project is currently in development.
+
 #### Description:
 
 See live:
@@ -18,9 +22,6 @@ Adding hamburger menu.
 Adding Functional menu for larger devices.
 Adding component animations.
 
-#### Note:
-
-This project is currently in development.
 
 ## Project Screen Shots
 
