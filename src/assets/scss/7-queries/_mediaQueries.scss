@@ -57,19 +57,43 @@
         border-left   : 2px solid black;
     }
 
+    #prices {
+
+        .price-list-wrapper {
+            display              : -ms-grid;
+            display              : grid;
+            width                : 95%;
+            height               : auto;
+            max-width            : 1000px;
+            margin-top           : 20px;
+            grid-column-gap      : 16px;
+            grid-row-gap         : 16px;
+            -ms-grid-columns     : 1fr 1fr;
+            grid-template-columns: 1fr 1fr;
+            -ms-grid-rows        : auto;
+            grid-template-rows   : auto;
+        }
+
+        .price-card:nth-of-type(2n) {
+            @include itemBorder(#000, 5px, rgba(27, 27, 24, 0.62), rgba(56, 56, 56, 0.2));
+            background-color: $serviceCardBg;
+
+        }
+    }
+
     #gallery {
         padding: 80px;
 
         .gallery-grid {
-            -ms-grid-columns        : 1fr 1fr 1fr;
-            grid-template-columns   : 1fr 1fr 1fr;
-            -ms-grid-rows           : auto auto auto;
-            grid-template-rows      : auto auto auto;
-            -ms-grid-rows           : auto auto;
-            grid-template-rows      : auto auto;
-            grid-row-gap            : 16px;
-            grid-column-gap         : 16px;
-            grid-template-areas     :
+            -ms-grid-columns     : 1fr 1fr 1fr;
+            grid-template-columns: 1fr 1fr 1fr;
+            -ms-grid-rows        : auto auto auto;
+            grid-template-rows   : auto auto auto;
+            -ms-grid-rows        : auto auto;
+            grid-template-rows   : auto auto;
+            grid-row-gap         : 16px;
+            grid-column-gap      : 16px;
+            grid-template-areas  :
                 "top middle right"
                 "top mid right"
                 "bottom bottom bottomright";
@@ -107,6 +131,15 @@
             max-height: 100%;
         }
     }
+
+    #services {
+        .services-grid {
+            -ms-grid-columns     : 1fr 1fr 1fr;
+            grid-template-columns: 1fr 1fr 1fr;
+            -ms-grid-rows        : auto auto;
+            grid-template-rows   : auto auto;
+        }
+    }
 }
 
 @media screen and (min-width: 1040px) {
@@ -130,14 +163,55 @@
     }
 
     #about {
-        width         : 80%;
-        padding-top   : 0;
-        padding-bottom: 0;
-        margin        : 100px auto;
-        border-left   : 2px solid black;
+        width       : 60%;
+        padding-left: 80px;
     }
 
     #gallery {
         padding: 80px;
+    }
+
+    #services {
+        padding: 100px;
+    }
+
+    #prices {
+        .price-list-wrapper {
+            padding: 0;
+        }
+    }
+
+    footer {
+        display                : grid;
+        padding                : 80px;
+        box-sizing: border-box;
+        -webkit-box-pack       : stretch;
+        -webkit-justify-content: stretch;
+        -ms-flex-pack          : stretch;
+        justify-content        : stretch;
+        justify-items          : start;
+        -webkit-box-align      : start;
+        -webkit-align-items    : start;
+        -ms-flex-align         : start;
+        align-items            : start;
+        -webkit-align-content  : stretch;
+        -ms-flex-line-pack     : stretch;
+        align-content          : stretch;
+        grid-column-gap        : 16px;
+        grid-row-gap           : 16px;
+        -ms-grid-columns       : 1fr 1fr 1fr 1fr 1fr;
+        grid-template-columns  : 1fr 1fr 1fr 1fr 1fr;
+        -ms-grid-rows          : auto;
+        grid-template-rows     : auto;
+
+        h3 {
+            margin: 0 0 50px;
+        }
+
+        ul {
+            li {
+                margin: 30px 0;
+            }
+        }
     }
 }
