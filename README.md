@@ -8,6 +8,8 @@ See live:
 A hair salon websute, built with React, JavaScript/JSX, and SCSS.
 
 ## Project Status
+
+### Current
 Adding styles for larger devices.
 
 ### Next steps:
