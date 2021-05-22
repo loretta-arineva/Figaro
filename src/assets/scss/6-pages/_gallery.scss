@@ -5,6 +5,7 @@
 
     .gallery-grid {
         display               : -ms-grid;
+        margin: 0 auto;
         display               : grid;
         -webkit-box-orient    : vertical;
         -webkit-box-direction : normal;
